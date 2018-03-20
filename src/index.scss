@@ -1,0 +1,15 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+@font-face {
+  font-family: "Raleway-Bold";
+  font-weight: bold;
+  src: url("~Static/fonts/Raleway-Bold.eot?") format("eot");
+}
+
+body {
+  color: red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: "Raleway-Bold", serif;
+}
