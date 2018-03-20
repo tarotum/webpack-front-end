@@ -1,7 +1,5 @@
 # webpack-front-end
 
----
-
 ### Yarn commands:
 
 1.  `yarn start` - run dev server
@@ -9,8 +7,6 @@
 3.  `yarn serv` - run static server
 
 ### Directory Structure
-
----
 
 <pre>
  ┬  
