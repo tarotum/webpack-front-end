@@ -1,27 +1,15 @@
 import "./index.scss";
-//import $ from "jquery";
+import "./components/Slider";
 
-import navBar from "./components/navBar";
+/**
+ * Пример подключения больших файлов
+ * 
 
-function component() {
-  const element = document.createElement("div");
-  const button = document.createElement("button");
-  const br = document.createElement("br");
-
-  button.innerHTML = "Click me and look at the console!";
-  element.innerHTML = "Hello";
-  element.appendChild(br);
-  element.appendChild(button);
-
-  button.onclick = e => {
-    import("jquery").then(jquery => {
-      const $ = jquery.default;
-      $("body").css("backgroundColor", "red");
-    });
-    alert("click");
-  };
-
-  return element;
+if ($(".slider").length > 0) {
+  import("./components/Slider").then(module => {
+    const slider = module.default;
+    slider();
+  });
 }
 
-document.body.appendChild(component());
+*/

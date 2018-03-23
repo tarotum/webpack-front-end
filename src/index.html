@@ -11,22 +11,53 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <h1>Hello World!</h1>
-            <ul class="list">
-                <li class="list__item">
-                    <i class="far fa-address-book"></i>
-                </li>
-                <li class="list__item">item_2</li>
-                <li class="list__item">item_3</li>
-                <li class="list__item">item_4</li>
-                <li class="list__item">item_5</li>
-            </ul>
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <h1 class="main-title">Webpack starter template</h1>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="slider">
+                        <h3 class="slider__title">Пример компонента:</h3>
+                        <div class="owl-carousel owl-theme slider__carousel">
+                            <img class="item" src="<%= require('Static/img/img.jpg') %>" alt="Item">
+                            <img class="item" src="<%= require('Static/img/img.jpg') %>" alt="Item">
+                            <img class="item" src="<%= require('Static/img/img.jpg') %>" alt="Item">
+                            <img class="item" src="<%= require('Static/img/img.jpg') %>" alt="Item">
+                            <img class="item" src="<%= require('Static/img/img.jpg') %>" alt="Item">
+                            <img class="item" src="<%= require('Static/img/img.jpg') %>" alt="Item">
+                            <img class="item" src="<%= require('Static/img/img.jpg') %>" alt="Item">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <h5>Команды:</h5>
+                    <ol>
+                        <li>
+                            <code>yarn start</code> - run dev server</li>
+                        <li>
+                            <code>yarn build</code> - run build</li>
+                        <li>
+                            <code>yarn serv</code> - run static server</li>
+                        <li>
+                            <code>yarn tunnel</code> - create external link</li>
+                    </ol>
+                </div>
+                <div class="col-sm">
+                    <h5>Шаблон включает по-умолчанию:</h5>
+                    <ol>
+                        <li>jQuery</li>
+                        <li>Bootstrap 4 (Proper.js)</li>
+                        <li>owlcarousel 2</li>
+                    </ol>
+                </div>
+            </div>
+
         </div>
-        <a class="image-popup-vertical-fit" href="<%= require('Static/img/img.jpg') %>" title="Caption. Can be aligned to any side and contain any HTML.">
-            <img src="<%= require('Static/img/img.jpg') %>" alt="cat" width="75" height="75">
-        </a>
     </div>
 </body>
 

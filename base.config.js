@@ -23,7 +23,6 @@ module.exports = {
       },
       {
         test: /\.(png|jp(e*)g|gif|svg)$/,
-        exclude: /node_modules/,
         use: [
           {
             loader: "file-loader",
@@ -48,13 +47,14 @@ module.exports = {
   },
   plugins: [
     new webpack.EnvironmentPlugin(["NODE_ENV"]),
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
+      "window.jQuery": "jquery"
+    }),
     new HtmlWebpackPlugin({
       filename: path.resolve(__dirname, "build/index.html"),
       template: path.resolve(__dirname, "src/index.html")
-    }),
-    new HtmlWebpackPlugin({
-      filename: path.resolve(__dirname, "build/about.html"),
-      template: path.resolve(__dirname, "src/about.html")
     })
   ],
   resolve: {

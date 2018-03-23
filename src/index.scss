@@ -6,10 +6,26 @@
   src: url("~Static/fonts/Raleway-Bold.eot?") format("eot");
 }
 
+html,
 body {
-  color: red;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  color: #222;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  font-family: "Raleway-Bold", serif;
+  font-family: "Raleway-Bold", sans-serif;
+}
+.content {
+  min-height: 100vh;
+  align-items: center;
+  display: flex;
+}
+.main-title {
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
 }
