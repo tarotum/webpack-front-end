@@ -1,16 +1,18 @@
 {
   "name": "webpack-front-end",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "license": "MIT",
   "scripts": {
-    "start":
-      "cross-env NODE_ENV=development webpack-dev-server --config dev.config.js  --color --open --mode development --env.development",
-    "build":
-      "cross-env NODE_ENV=production webpack --config prod.config.js --progress --hide-modules --mode production --env.production",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --config dev.config.js  --color --open --mode development --env.development",
+    "build": "cross-env NODE_ENV=production webpack --config prod.config.js --progress --hide-modules --mode production --env.production",
     "serv": "static build",
     "tunnel": "gulp tunnel"
   },
-  "browserslist": ["> 1%", "last 2 versions", "not ie <= 8"],
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
   "devDependencies": {
     "autoprefixer": "^8.1.0",
     "babel-core": "^6.26.0",
