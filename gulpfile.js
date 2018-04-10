@@ -1,16 +1,15 @@
-var gulp = require("gulp"),
-  browserSync = require("browser-sync");
+var gulp = require('gulp');
+var browserSync = require('browser-sync');
 
-gulp.task("tunnel", function() {
-  browserSync({
-    server: {
-      baseDir: "build"
-    },
-    //notify: false,
-    open: false,
-    tunnel: true,
-    tunnel: "tarotum" //Demonstration page: http://projectmane.localtunnel.me
-  });
+gulp.task('tunnel', function () {
+	browserSync({
+		server: {
+			baseDir: 'build'
+		},
+		// notify: false,
+		open: false,
+		tunnel: true
+	});
 });
 
-gulp.task("default", ["browser-sync"]);
+gulp.task('default', ['browser-sync']);

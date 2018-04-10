@@ -1,9 +1,9 @@
-import "./index.scss";
-import "./components/Slider";
+import './index.scss';
+import './components/Slider';
 
 /**
  * Пример подключения больших файлов
- * 
+ *
 
 if ($(".slider").length > 0) {
   import("./components/Slider").then(module => {
