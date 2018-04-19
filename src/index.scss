@@ -1,4 +1,6 @@
-@import "~bootstrap/dist/css/bootstrap.css";
+@import "~bootstrap/scss/bootstrap-reboot.scss";
+@import "~bootstrap/scss/bootstrap-grid.scss";
+@import "~bootstrap/scss/utilities";
 
 @font-face {
   font-family: "Raleway-Bold";
@@ -6,26 +8,41 @@
   src: url("~Static/fonts/Raleway-Bold.eot?") format("eot");
 }
 
-html,
-body {
-  min-height: 100%;
-  box-sizing: border-box;
+@import "~Static/variables";
+
+::placeholder {
+	color: $text;
+}
+::selection {
+	background-color: $accent;
+	color: #fff;
 }
 
+code {
+  color: $accent;
+  background-color: $text;
+  padding: .1em .3em;
+}
+
+* {
+  box-sizing: border-box;
+}
 body {
-  color: #222;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  font-family: "Raleway-Bold", sans-serif;
-}
-.content {
-  min-height: 100vh;
-  align-items: center;
-  display: flex;
-}
-.main-title {
-  text-align: center;
-  width: 100%;
-  text-transform: uppercase;
+  color: $text;
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.65;
+  font-family: $default-font;
+  overflow-x: hidden;
+  input, textarea {
+		border: $text 1px solid;
+		outline: none;
+		&:focus:required:invalid {
+			border-color: red;
+		}
+		&:required:valid {
+			border-color: green;
+		}
+	}
 }

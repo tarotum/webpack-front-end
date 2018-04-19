@@ -12,4 +12,4 @@ gulp.task('tunnel', function () {
 	});
 });
 
-gulp.task('default', ['browser-sync']);
+gulp.task('default', ['tunnel']);
