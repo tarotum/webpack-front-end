@@ -1,0 +1,16 @@
+.component {
+  &__title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+  }
+  &__text {
+    font-size: 14px;
+    color: #222;
+  }
+  &__image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
